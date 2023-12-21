@@ -7,4 +7,5 @@ export type PieceType = {
   type: PieceTypeEnum;
   captured: boolean;
   color: PieceColorEnum;
+  isFirstMove: boolean;
 };

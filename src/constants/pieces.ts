@@ -22,6 +22,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.ROOK,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackKnight,
@@ -29,6 +30,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.KNIGHT,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackBishop,
@@ -36,6 +38,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.BISHOP,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackQueen,
@@ -43,6 +46,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.QUEEN,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackKing,
@@ -50,6 +54,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.KING,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackBishop,
@@ -57,6 +62,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.BISHOP,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackKnight,
@@ -64,6 +70,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.KNIGHT,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackRook,
@@ -71,6 +78,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.ROOK,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackPawn,
@@ -78,6 +86,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackPawn,
@@ -85,6 +94,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackPawn,
@@ -92,6 +102,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackPawn,
@@ -99,6 +110,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackPawn,
@@ -106,6 +118,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackPawn,
@@ -113,6 +126,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackPawn,
@@ -120,6 +134,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
   {
     img: blackPawn,
@@ -127,6 +142,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.BLACK,
+    isFirstMove: true,
   },
 
   // white pieces
@@ -136,6 +152,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.ROOK,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whiteKnight,
@@ -143,6 +160,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.KNIGHT,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whiteBishop,
@@ -150,6 +168,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.BISHOP,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whiteQueen,
@@ -157,6 +176,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.QUEEN,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whiteKing,
@@ -164,6 +184,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.KING,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whiteBishop,
@@ -171,13 +192,15 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.BISHOP,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whiteKnight,
     index: 62,
-    type: PieceTypeEnum.KING,
+    type: PieceTypeEnum.KNIGHT,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whiteRook,
@@ -185,6 +208,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.ROOK,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whitePawn,
@@ -192,6 +216,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whitePawn,
@@ -199,6 +224,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whitePawn,
@@ -206,6 +232,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whitePawn,
@@ -213,6 +240,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whitePawn,
@@ -220,6 +248,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whitePawn,
@@ -227,6 +256,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whitePawn,
@@ -234,6 +264,7 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
   {
     img: whitePawn,
@@ -241,5 +272,6 @@ export const pieces: PieceType[] = [
     type: PieceTypeEnum.PAWN,
     captured: false,
     color: PieceColorEnum.WHITE,
+    isFirstMove: true,
   },
 ];

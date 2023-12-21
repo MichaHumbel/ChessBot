@@ -6,8 +6,6 @@ import {
   GAME_BOARD_SIZE,
 } from '../../constants/gameBoardConstants';
 import { pieces } from '../../constants/pieces';
-import { PieceColorEnum } from '../../enums/piece-color.enum';
-import { PieceTypeEnum } from '../../enums/piece-type.enum';
 import { PieceType } from '../../types/piece.type';
 import Square from '../Square/Square';
 
@@ -17,22 +15,15 @@ const ChessBoard: FunctionComponent<ChessBoardProps> = () => {
   const [gameState, setGameState] = useState(pieces);
 
   // TODO: move to helper functions
-  const makeMove = (piece: PieceType) => {
-    if (piece.color === PieceColorEnum.WHITE) {
-      if (piece.type === PieceTypeEnum.PAWN) {
-        setGameState((prevGameState) =>
-          prevGameState.map((gameStatePiece) => {
-            if (gameStatePiece.index === piece.index) {
-              return { ...piece, index: piece.index - 8 };
-            }
-            return gameStatePiece;
-          })
-        );
-      }
-    }
-
-    if (piece.color === PieceColorEnum.BLACK) {
-    }
+  const makeMove = (piece: PieceType, dropIndex: number) => {
+    setGameState((prevGameState) =>
+      prevGameState.map((gameStatePiece) => {
+        if (gameStatePiece.index === piece.index) {
+          return { ...piece, index: dropIndex, isFirstMove: false };
+        }
+        return gameStatePiece;
+      })
+    );
   };
 
   const createChessBoard = Array.from(
