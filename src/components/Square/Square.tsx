@@ -13,9 +13,15 @@ interface SquareProps {
   index: number;
   piece: PieceType;
   makeMove: (piece: PieceType, dropIndex: number) => void;
+  gameState: PieceType[];
 }
 
-const Square: FunctionComponent<SquareProps> = ({ piece, index, makeMove }) => {
+const Square: FunctionComponent<SquareProps> = ({
+  piece,
+  index,
+  makeMove,
+  gameState,
+}) => {
   const row = Math.floor(index / CHESS_BOARD_SIZE);
   const col = index % CHESS_BOARD_SIZE;
   const color = (row + col) % 2 === 0 ? 'bg-slate-200' : 'bg-slate-800';
@@ -26,7 +32,7 @@ const Square: FunctionComponent<SquareProps> = ({ piece, index, makeMove }) => {
     () => ({
       accept: 'PIECE',
       drop: (draggedPiece: PieceType) => makeMove(draggedPiece, index),
-      canDrop: (draggedPiece) => canPieceMove(draggedPiece, index),
+      canDrop: (draggedPiece) => canPieceMove(draggedPiece, index, gameState),
       collect: (monitor) => ({
         isOver: !!monitor.isOver(),
         canDrop: !!monitor.canDrop(),

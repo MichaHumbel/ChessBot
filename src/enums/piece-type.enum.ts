@@ -5,4 +5,6 @@ export enum PieceTypeEnum {
   ROOK = 'ROOK',
   QUEEN = 'QUEEN',
   KING = 'KING',
+
+  EMPTY = 'EMPTY',
 }

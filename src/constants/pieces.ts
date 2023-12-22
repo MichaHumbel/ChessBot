@@ -144,6 +144,166 @@ export const pieces: PieceType[] = [
     color: PieceColorEnum.BLACK,
     isFirstMove: true,
   },
+  {
+    index: 16,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 17,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 18,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 19,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 20,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 21,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 22,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 23,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 42,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 25,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 26,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 27,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 28,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 29,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 30,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 31,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 32,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 33,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 34,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 35,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 36,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 37,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 38,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 39,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 40,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 41,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 42,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 43,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 44,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 45,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 46,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 47,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 48,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 49,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 50,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 51,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 52,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 53,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 54,
+    type: PieceTypeEnum.EMPTY,
+  },
+  {
+    index: 55,
+    type: PieceTypeEnum.EMPTY,
+  },
 
   // white pieces
   {
