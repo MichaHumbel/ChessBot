@@ -28,7 +28,10 @@ const ChessBoard: FunctionComponent<ChessBoardProps> = () => {
       // 2. replace the item where the draggedPiece started to an empty piece
       prevGameState.map((gameStatePiece: PieceType) => {
         // if drop square is occupied
-        if (gameStatePiece.index === dropIndex) {
+        if (
+          gameStatePiece.index === dropIndex &&
+          gameStatePiece.type !== PieceTypeEnum.EMPTY
+        ) {
           console.log('this square is occupied');
           // sets the captured piece as captured
           return {
@@ -42,6 +45,7 @@ const ChessBoard: FunctionComponent<ChessBoardProps> = () => {
         }
 
         if (gameStatePiece.index === draggedPiece.index) {
+          console.log('here');
           return { ...draggedPiece, index: dropIndex, isFirstMove: false };
         }
         return gameStatePiece;
