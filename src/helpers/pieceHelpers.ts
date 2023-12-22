@@ -13,19 +13,36 @@ export const canPieceMove = (
   ) {
     return (
       (piece.index - 8 === dropIndex &&
-        // prevents pawns from moving forward if there is a piece in front
-        !gameState.find((el) => el.index === dropIndex)) ||
+        !!gameState.find(
+          (el) => el.index === dropIndex && el.type === PieceTypeEnum.EMPTY
+        )) ||
       (piece.index - 16 === dropIndex &&
         piece.isFirstMove &&
-        // prevents pawns from moving forward if there is a piece in front
-        !gameState.find((el) => el.index === dropIndex)) ||
-      // TODO: doesn't work for A and H pawns
-      // allows pawns to capter diagonally -> if the square you'd like to drop the pawn is occupied and the difference of its index to the currently dragged pawn is 9 -> diagonally up left
-      gameState.find((el) => el.index === dropIndex)?.index ===
-        piece.index - 9 ||
-      // TODO: doesn't work for A and H pawns
-      // allows pawns to capter diagonally -> if the square you'd like to drop the pawn is occupied and the difference of its index to the currently dragged pawn is 9 -> diagonally up right
-      gameState.find((el) => el.index === dropIndex)?.index === piece.index - 7
+        !!gameState.find(
+          (el) => el.index === dropIndex && el.type === PieceTypeEnum.EMPTY
+        ))
+      // &&
+      // // prevents pawns from moving forward if there is a piece in front
+      // gameState.find((el) => el.type === PieceTypeEnum.EMPTY)?.index ===
+      //   dropIndex
+
+      //     ||
+      // (piece.index - 16 === dropIndex &&
+      //   piece.isFirstMove &&
+      //   // prevents pawns from moving forward if there is a piece in front
+      //   !gameState.find((el) => el.index === dropIndex)) ||
+      // // TODO: doesn't work for A and H pawns
+      // // allows pawns to capter diagonally -> if the square you'd like to drop the pawn is occupied and the difference of its index to the currently dragged pawn is 9 -> diagonally up left
+      // gameState.find(
+      //   (el) => el.index === dropIndex && el.type !== PieceTypeEnum.EMPTY
+      // )?.index ===
+      //   piece.index - 9 ||
+      // // TODO: doesn't work for A and H pawns
+      // // allows pawns to capter diagonally -> if the square you'd like to drop the pawn is occupied and the difference of its index to the currently dragged pawn is 9 -> diagonally up right
+      // gameState.find(
+      //   (el) => el.index === dropIndex && el.type !== PieceTypeEnum.EMPTY
+      // )?.index ===
+      //   piece.index - 7
     );
   }
 

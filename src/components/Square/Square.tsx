@@ -4,6 +4,7 @@ import {
   CHESS_BOARD_SIZE,
   GAME_BOARD_SIZE,
 } from '../../constants/gameBoardConstants';
+import { PieceTypeEnum } from '../../enums/piece-type.enum';
 import { canPieceMove } from '../../helpers/pieceHelpers';
 import { PieceType } from '../../types/piece.type';
 import SquareOverlay from '../Overlay/SquareOverlay';
@@ -49,7 +50,7 @@ const Square: FunctionComponent<SquareProps> = ({
       style={{ width: `${squareSize}px`, height: `${squareSize}px` }}
     >
       <span className="absolute">{index}</span>
-      {piece && <Piece piece={piece} />}
+      {piece && piece.type !== PieceTypeEnum.EMPTY && <Piece piece={piece} />}
 
       {isOver && !canDrop && <SquareOverlay color="red" />}
       {!isOver && canDrop && <SquareOverlay color="yellow" />}
